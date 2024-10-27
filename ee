@@ -1037,7 +1037,7 @@ local function XBXFNXA_fake_script()
         return req(obj)
     end
 	local img = script.Parent
-	local userid = game.Players.LocalPlayer.UserId
+	local userid = game:GetService("Players").LocalPlayer.UserId
 	while wait() do 
 		img.Image = "rbxthumb://type=AvatarHeadShot&w=420&h=420&id="..userid
 	end
@@ -1054,7 +1054,7 @@ local function MRFND_fake_script()
         end
         return req(obj)
     end
-	local plr = game.Players.LocalPlayer.DisplayName
+	local plr = game:GetService("Players").LocalPlayer.DisplayName
 	local user = script.Parent 
 	while wait() do 
 		user.Text = plr
@@ -1073,7 +1073,7 @@ local function FUXUOXV_fake_script()
         end
         return req(obj)
     end
-	local plr = game.Players.LocalPlayer.Name
+	local plr = game:GetService("Players").LocalPlayer.Name
 	local user = script.Parent 
 	while wait() do 
 		user.Text = plr
@@ -1274,8 +1274,8 @@ local function WWARFJ_fake_script()
     local slider = script.Parent.Parent
     local fillthing = slider:FindFirstChild("FillThing")
     local slideman = script.Parent
-    local mouse = game.Players.LocalPlayer:GetMouse()
-    local plr = game.Players.LocalPlayer.Name
+    local mouse = game:GetService("Players").LocalPlayer:GetMouse()
+    local plr = game:GetService("Players").LocalPlayer.Name
     local slidertext = script.Parent.Parent.Val
 
     local uis = game:GetService("UserInputService")
@@ -1289,7 +1289,7 @@ local function WWARFJ_fake_script()
         local width = clampedX - sliderpos.X
         fillthing.Size = UDim2.new(0, width, 1, 0)
         local vals = 16 + (width / ssiz.X) * (100 - 16)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = vals
+        game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = vals
         slidertext.Text = "WalkSpeed: "..math.floor(vals)
     end
 
@@ -1320,8 +1320,8 @@ local function EFXZOZ_fake_script()
     local slider = script.Parent.Parent
     local fillthing = slider:FindFirstChild("FillThing")
     local slideman = script.Parent
-    local mouse = game.Players.LocalPlayer:GetMouse()
-    local plr = game.Players.LocalPlayer.Name
+    local mouse = game:GetService("Players").LocalPlayer:GetMouse()
+    local plr = game:GetService("Players").LocalPlayer.Name
     local slidertext = script.Parent.Parent.Val
 
     local uis = game:GetService("UserInputService")
@@ -1335,7 +1335,7 @@ local function EFXZOZ_fake_script()
         local width = clampedX - sliderpos.X
         fillthing.Size = UDim2.new(0, width, 1, 0)
         local vals = 50 + (width / ssiz.X) * (150 - 50)
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = vals
+        game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = vals
         slidertext.Text = "JumpPower: "..math.floor(vals)
     end
 
@@ -1366,8 +1366,8 @@ local function SWUB_fake_script()
     local slider = script.Parent.Parent
     local fillthing = slider:FindFirstChild("FillThing")
     local slideman = script.Parent
-    local mouse = game.Players.LocalPlayer:GetMouse()
-    local plr = game.Players.LocalPlayer.Name
+    local mouse = game:GetService("Players").LocalPlayer:GetMouse()
+    local plr = game:GetService("Players").LocalPlayer.Name
     local slidertext = script.Parent.Parent.Val
 
     local uis = game:GetService("UserInputService")
